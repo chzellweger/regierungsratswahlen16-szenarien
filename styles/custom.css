@@ -1,0 +1,170 @@
+.content-wrapper {
+	margin: 90px 22px 0 22px
+}
+
+.interactive-content {
+	padding-top: 20px;
+}
+
+.title {
+	display: block;
+	font-family: 'Publico Headline Extrabold', Georgia, serif;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 22px;
+	margin-bottom: 12px;
+	vertical-align: baseline;
+}
+
+.lead, .authors {
+	display: block;
+	font-family: Georgia, serif;
+	font-size: 14px;
+	line-height: 18px;
+	vertical-align: baseline;
+}
+
+.authors {
+	font-style: italic;
+	padding-top: 3px;
+}
+
+.rr {
+	width: 319px;
+	cursor: pointer;
+}
+
+.rr img {
+	padding: 1px;
+}
+
+.parties-container {
+	width: 320px;
+	margin-top: 10px;
+}
+
+
+.parties p {
+	margin-bottom: 15px;
+}
+
+.legend {
+	padding: 10px 0 10px 0;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	vertical-align: baseline;
+}
+
+.cat-select ul {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.cat-select ul li {
+	float: left;
+	margin: 2px;
+	height: 30px;
+	background-color: #0085ab;
+	padding: 5px;
+	margin-bottom: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;;
+	color: white;
+	font-family: 'Benton Sans Cod', sans-serif;
+	cursor: pointer;
+}
+
+.text-content {
+	margin-top: 15px;
+}
+
+
+#text, .title-small {
+	font-family: Georgia, serif;
+	font-size: 18px;
+	line-height: 26px;
+	vertical-align: baseline;
+}
+
+.title-small {
+	padding-bottom: 5px;
+	line-height: 10px;
+	font-weight: bold;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+@media screen and (min-width: 620px){
+
+	.content-wrapper {
+		max-width: 590px;
+		margin: 90px auto 0 auto;
+	
+	}
+
+	.title {
+		display: block;
+		font-family: 'Publico Headline', Georgia, serif;
+		font-size: 48px;
+		font-weight: bold;
+		line-height: 50px;
+		margin-bottom: 12px;
+		vertical-align: baseline;
+	}
+
+	.lead, .authors {
+		font-family: Georgia;
+    	color: #333;
+    	font-size: 22px;
+    	line-height: 29px;
+	}
+
+	.cat-container {
+		float: left;
+		width: 30%;
+	}
+
+	.cat-select ul li {
+		clear: both;
+	}
+
+	.parties-container {
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.parties-select {
+		margin-top: 20px;
+	}
+
+	.legend {
+		margin-top: 20px;
+	}
+
+	.parties-select .legend {
+		margin-top: 0px;
+	}
+
+	.text-content {
+	margin-top: 25px;
+}
+
+
+	
+}

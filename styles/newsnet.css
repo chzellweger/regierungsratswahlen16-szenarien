@@ -1,0 +1,272 @@
+
+/*--NEWSNET-STYLES--*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+*,body {
+    text-rendering: geometricPrecision
+}
+
+*,:after,:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    margin: 0
+}
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline
+}
+
+/*-FONTS-*/
+
+@font-face {
+    font-family: flexslider-icon;
+    src: url(fonts/flexslider-icon.eot);
+    src: url(fonts/flexslider-icon.eot?#iefix) format('embedded-opentype'),url(fonts/flexslider-icon.woff) format('woff'),url(fonts/flexslider-icon.ttf) format('truetype'),url(fonts/flexslider-icon.svg#flexslider-icon) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Publico Headline";
+    src: url(http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Medium-Web.eot);
+    src: url(http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Medium-Web.eot?#iefix) format("embedded-opentype"),url(http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Medium-Web.woff) format("woff"),url(http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Medium-Web.ttf) format("truetype"),url(http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Medium-Web.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Publico Headline";
+    src: url(http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.eot);
+    src: url(http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.eot?#iefix) format("embedded-opentype"),url(http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.woff) format("woff"),url(http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.ttf) format("truetype"),url(http://www.tagesanzeiger.ch/css/fonts/publico/PublicoHeadline-Bold-Web.svg) format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Benton Sans Cond Black";
+    src: url(http://www.tagesanzeiger.ch/css/fonts/benton/3d37dcaf-9dfb-45f0-bd8f-a635fea92d0b-2.eot);
+    src: url(http://www.tagesanzeiger.ch/css/fonts/benton/3d37dcaf-9dfb-45f0-bd8f-a635fea92d0b-2.eot?) format("embedded-opentype"),url(http://www.tagesanzeiger.ch/css/fonts/benton/3d37dcaf-9dfb-45f0-bd8f-a635fea92d0b-3.woff) format("woff"),url(http://www.tagesanzeiger.ch/css/fonts/benton/3d37dcaf-9dfb-45f0-bd8f-a635fea92d0b-1.ttf) format("truetype"),url(http://www.tagesanzeiger.ch/css/fonts/benton/3d37dcaf-9dfb-45f0-bd8f-a635fea92d0b-4.svg#web) format("svg");
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: "Benton Sans Cond Light";
+    src: url(http://www.tagesanzeiger.ch/css/fonts/benton/2e86b3e0-b624-4270-befe-3f44606d827a-2.eot);
+    src: url(http://www.tagesanzeiger.ch/css/fonts/benton/2e86b3e0-b624-4270-befe-3f44606d827a-2.eot?) format("embedded-opentype"),url(http://www.tagesanzeiger.ch/css/fonts/benton/2e86b3e0-b624-4270-befe-3f44606d827a-3.woff) format("woff"),url(http://www.tagesanzeiger.ch/css/fonts/benton/2e86b3e0-b624-4270-befe-3f44606d827a-1.ttf) format("truetype"),url(http://www.tagesanzeiger.ch/css/fonts/benton/2e86b3e0-b624-4270-befe-3f44606d827a-4.svg#web) format("svg");
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "Benton Sans Cond";
+    src: url(http://www.tagesanzeiger.ch/css/fonts/benton/7bb9e5d1-f5d9-4a09-8b5d-770aa2f4228e-2.eot);
+    src: url(http://www.tagesanzeiger.ch/css/fonts/benton/7bb9e5d1-f5d9-4a09-8b5d-770aa2f4228e-2.eot?) format("embedded-opentype"),url(http://www.tagesanzeiger.ch/css/fonts/benton/7bb9e5d1-f5d9-4a09-8b5d-770aa2f4228e-3.woff) format("woff"),url(http://www.tagesanzeiger.ch/css/fonts/benton/7bb9e5d1-f5d9-4a09-8b5d-770aa2f4228e-1.ttf) format("truetype"),url(http://www.tagesanzeiger.ch/css/fonts/benton/7bb9e5d1-f5d9-4a09-8b5d-770aa2f4228e-4.svg#web) format("svg");
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: fontawesome;
+    src: url(../data/fonts/fontawesome-webfont.eot?v=4.0.3);
+    src: url(../data/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3) format("embedded-opentype"),url(../data/fonts/fontawesome-webfont.woff?v=4.0.3) format("woff"),url(../data/fonts/fontawesome-webfont.ttf?v=4.0.3) format("truetype"),url(../data/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../data/fonts/glyphicons-halflings-regular.eot);
+    src: url(../data/fonts/glyphicons-halflings-regular.eot#iefix) format('embedded-opentype'),url(../data/fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../data/fonts/glyphicons-halflings-regular.woff) format('woff'),url(../data/fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../data/fonts/glyphicons-halflings-regular.svg) format('svg')
+}
+
+
+
+@font-face {
+    font-family: "Tamedia Icons";
+    src: url(/fonts/tamedia-icons.eot);
+    src: url(/fonts/tamedia-icons.eot?#iefix) format("eot"),url(/fonts/tamedia-icons.woff) format("woff"),url(/fonts/tamedia-icons.ttf) format("truetype"),url(/fonts/tamedia-icons.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Publico Headline";
+    src: url(/fonts/PublicoHeadline-Medium-Web.eot);
+    src: url(/fonts/PublicoHeadline-Medium-Web.eot?#iefix) format("eot"),url(/fonts/PublicoHeadline-Medium-Web.woff) format("woff"),url(/fonts/PublicoHeadline-Medium-Web.ttf) format("truetype"),url(/fonts/PublicoHeadline-Medium-Web.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Publico Headline";
+    src: url(/fonts/PublicoHeadline-Bold-Web.eot);
+    src: url(/fonts/PublicoHeadline-Bold-Web.eot?#iefix) format("eot"),url(/fonts/PublicoHeadline-Bold-Web.woff) format("woff"),url(/fonts/PublicoHeadline-Bold-Web.ttf) format("truetype"),url(/fonts/PublicoHeadline-Bold-Web.svg) format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Publico Headline Extrabold";
+    src: url(/fonts/PublicoHeadline-Extrabold-Web.eot);
+    src: url(/fonts/PublicoHeadline-Extrabold-Web.eot?#iefix) format("eot"),url(/fonts/PublicoHeadline-Extrabold-Web.woff) format("woff"),url(/fonts/PublicoHeadline-Extrabold-Web.ttf) format("truetype"),url(/fonts/PublicoHeadline-Extrabold-Web.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Benton Sans Cond Black";
+    src: url(/fonts/3d37dcaf-9dfb-45f0-bd8f-a635fea92d0b-2.eot);
+    src: url(/fonts/3d37dcaf-9dfb-45f0-bd8f-a635fea92d0b-2.eot?) format("embedded-opentype"),url(/fonts/3d37dcaf-9dfb-45f0-bd8f-a635fea92d0b-3.woff) format("woff"),url(/fonts/3d37dcaf-9dfb-45f0-bd8f-a635fea92d0b-1.ttf) format("truetype"),url(/fonts/3d37dcaf-9dfb-45f0-bd8f-a635fea92d0b-4.svg#web) format("svg");
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: "Benton Sans Cond Light";
+    src: url(/fonts/2e86b3e0-b624-4270-befe-3f44606d827a-2.eot);
+    src: url(/fonts/2e86b3e0-b624-4270-befe-3f44606d827a-2.eot?) format("embedded-opentype"),url(/fonts/2e86b3e0-b624-4270-befe-3f44606d827a-3.woff) format("woff"),url(/fonts/2e86b3e0-b624-4270-befe-3f44606d827a-1.ttf) format("truetype"),url(/fonts/2e86b3e0-b624-4270-befe-3f44606d827a-4.svg#web) format("svg");
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "Benton Sans Cond";
+    src: url(/fonts/7bb9e5d1-f5d9-4a09-8b5d-770aa2f4228e-2.eot);
+    src: url(/fonts/7bb9e5d1-f5d9-4a09-8b5d-770aa2f4228e-2.eot?) format("embedded-opentype"),url(/fonts/7bb9e5d1-f5d9-4a09-8b5d-770aa2f4228e-3.woff) format("woff"),url(/fonts/7bb9e5d1-f5d9-4a09-8b5d-770aa2f4228e-1.ttf) format("truetype"),url(/fonts/7bb9e5d1-f5d9-4a09-8b5d-770aa2f4228e-4.svg#web) format("svg");
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(/fonts/SourceSansPro-Regular.eot);
+    src: url(/fonts/SourceSansPro-Regular.eot?) format("embedded-opentype"),url(/fonts/SourceSansPro-Regular.woff) format("woff"),url(/fonts/SourceSansPro-Regular.ttf) format("truetype"),url(/fonts/SourceSansPro-Regular.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Source Sans Pro Bold";
+    src: url(/fonts/SourceSansPro-Bold.eot);
+    src: url(/fonts/SourceSansPro-Bold.eot?) format("embedded-opentype"),url(/fonts/SourceSansPro-Bold.woff) format("woff"),url(/fonts/SourceSansPro-Bold.ttf) format("truetype"),url(/fonts/SourceSansPro-Bold.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url(/fonts/OpenSans-Light-webfont.eot);
+    src: url(/fonts/OpenSans-Light-webfont.eot?#iefix) format("embedded-opentype"),url(/fonts/OpenSans-Light-webfont.woff) format("woff"),url(/fonts/OpenSans-Light-webfont.ttf) format("truetype"),url(/fonts/OpenSans-Light-webfont.svg#OpenSansLight) format("svg");
+    font-weight: lighter;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Open Sans Light Italic";
+    src: url(/fonts/OpenSans-LightItalic-webfont.eot);
+    src: url(/fonts/OpenSans-LightItalic-webfont.eot?#iefix) format("embedded-opentype"),url(/fonts/OpenSans-LightItalic-webfont.woff) format("woff"),url(/fonts/OpenSans-LightItalic-webfont.ttf) format("truetype"),url(/fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic) format("svg");
+    font-weight: lighter;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(/fonts/OpenSans-Regular-webfont.eot);
+    src: url(/fonts/OpenSans-Regular-webfont.eot?#iefix) format("embedded-opentype"),url(/fonts/OpenSans-Regular-webfont.woff) format("woff"),url(/fonts/OpenSans-Regular-webfont.ttf) format("truetype"),url(/fonts/OpenSans-Regular-webfont.svg#OpenSansRegular) format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Open Sans Italic";
+    src: url(/fonts/OpenSans-Italic-webfont.eot);
+    src: url(/fonts/OpenSans-Italic-webfont.eot?#iefix) format("embedded-opentype"),url(/fonts/OpenSans-Italic-webfont.woff) format("woff"),url(/fonts/OpenSans-Italic-webfont.ttf) format("truetype"),url(/fonts/OpenSans-Italic-webfont.svg#OpenSansItalic) format("svg");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(/fonts/OpenSans-Bold-webfont.eot);
+    src: url(/fonts/OpenSans-Bold-webfont.eot?#iefix) format("embedded-opentype"),url(/fonts/OpenSans-Bold-webfont.woff) format("woff"),url(/fonts/OpenSans-Bold-webfont.ttf) format("truetype"),url(.///fonts/OpenSans-Bold-webfont.svg#OpenSansBold) format("svg");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Open Sans Bold Italic";
+    src: url(/fonts/OpenSans-BoldItalic-webfont.eot);
+    src: url(/fonts/OpenSans-BoldItalic-webfont.eot?#iefix) format("embedded-opentype"),url(/fonts/OpenSans-BoldItalic-webfont.woff) format("woff"),url(/fonts/OpenSans-BoldItalic-webfont.ttf) format("truetype"),url(/fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic) format("svg");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: "Open Sans Extra Bold";
+    src: url(/fonts/OpenSans-ExtraBold-webfont.eot);
+    src: url(/fonts/OpenSans-ExtraBold-webfont.eot?#iefix) format("embedded-opentype"),url(/fonts/OpenSans-ExtraBold-webfont.woff) format("woff"),url(/fonts/OpenSans-ExtraBold-webfont.ttf) format("truetype"),url(/fonts/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold) format("svg");
+    font-weight: bolder;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Open Sans Extra Bold Italic";
+    src: url(/fonts/OpenSans-ExtraBoldItalic-webfont.eot);
+    src: url(/fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix) format("embedded-opentype"),url(/fonts/OpenSans-ExtraBoldItalic-webfont.woff) format("woff"),url(/fonts/OpenSans-ExtraBoldItalic-webfont.ttf) format("truetype"),url(/fonts/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic) format("svg");
+    font-weight: bolder;
+    font-style: italic
+}
+
+
+/*-HEADER-*/
+
+.logo {
+	background-image: url(../img/sprite@2x.png);
+    background-size: 376px 176px;
+    background-position: -2px -91px;
+    width: 140px;
+    height: 41px;
+    top: 9px!important;
+	color: blue;
+	z-index: 99;
+}
+
+#header {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0,0,0,.155);
+    background-color: #fff;
+    z-index: 10;
+    height: 60px;
+    font-family: "Benton Sans Cond";
+    font-size: 16px
+}
+
+#header>.inside {
+    position: relative
+}
+
+#header .logo {
+    position: absolute;
+    top: 12px;
+    left: 20px
+}
+
